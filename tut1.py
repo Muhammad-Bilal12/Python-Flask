@@ -15,6 +15,11 @@ def hello_about():
     return render_template("about.html", name2=name)
 
 
+@app.route("/bootstrap")
+def bootstrap():
+    return render_template("bootstrap.html",)
+
+
 app.run(debug=True)  # to run the project and run debugging
 
 
